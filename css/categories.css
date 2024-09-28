@@ -1,0 +1,209 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0ebe6; /* Soft background */
+    margin: 0;
+    padding: 0;
+}
+
+nav a.nav-categories {
+    font-weight: 800;
+    border-bottom: 2px solid #ffffff; /* Underline effect for emphasis */
+}
+
+.category-link {
+    background-color: #4a90e2; /* Bright blue */
+    color: white;
+    border-radius: 4px;
+}
+
+.category-section {
+    padding: 80px 20px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.category-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.category-section p {
+    font-size: 1.2rem;
+    margin-bottom: 120px;
+    color: #333; /* Darker text for better readability */
+}
+
+.category-grid {
+    display: grid;
+    gap: 30px;
+    padding: 0 40px;
+}
+
+.category-item {
+    background-color: #d9d7ce; /* White background for items */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.category-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.category-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333; /* Dark text */
+}
+
+.category-item p {
+    font-size: 1rem;
+    color: #666; /* Lighter text */
+    padding: 0 5vw;
+}
+
+.category-item a {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e94e77; /* Bright pink for buttons */
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.category-item h1 {
+    margin: 80px;
+}
+
+.slider-container {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    width: 50%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.slider {
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.7s ease-in-out;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: black;
+    padding: 10px;
+    z-index: 10;
+    transition: color 0.3s;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover,
+.next:hover {
+    color: gray;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Media queries for responsive adjustments */
+@media (max-width: 768px) {
+    .category-section {
+        padding: 60px 10px; /* Reduced padding for smaller screens */
+    }
+
+    .category-section h1 {
+        font-size: 2rem; /* Smaller heading on smaller screens */
+    }
+
+    .category-section p {
+        font-size: 1rem; /* Smaller paragraph text */
+        margin-bottom: 80px; /* Adjusted margin */
+    }
+
+    .category-grid {
+        padding: 0 20px; /* Less padding on smaller screens */
+    }
+
+    .slider-container {
+        width: 100%; /* Full width on smaller screens */
+        margin: 0; /* Remove margins */
+    }
+
+    .slider-container .prev,
+    .slider-container .next {
+        font-size: 3vw; /* Responsive arrow size */
+    }
+}
+
+@media (max-width: 500px) {
+    .category-section h1 {
+        font-size: 1.5rem; /* Even smaller heading for mobile */
+    }
+
+    .category-section p {
+        font-size: 0.9rem; /* Smaller paragraph text for mobile */
+        margin-bottom: 40px; /* Adjust bottom margin */
+    }
+
+    .category-item h3 {
+        font-size: 1.2rem; /* Smaller heading in category items */
+    }
+
+    .category-item p {
+        font-size: 0.9rem; /* Smaller text in category items */
+    }
+
+    .prev,
+    .next {
+        font-size: 2.5vw; /* Smaller arrow size for mobile */
+    }
+
+    .category-item p {
+        padding: 0 4px;
+    }
+}
